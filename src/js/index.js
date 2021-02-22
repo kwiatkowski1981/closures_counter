@@ -8,9 +8,23 @@ import '../scss/main.scss';
 
 console.log('HELLO 🚀')
 
+const user = (name ="", age) => {
 
+let userName = name;
+let userAge = age;
 
-
+function showName()  {
+    console.log(` Cześć %c${userName}%c, ${userAge >= 18 ? 'Możesz sobie kupić piwko' : 'Nie możesz kupić jeszcze browarka hyh'}`, "color: red", "color: default");
+    }
+    return showName;
+}
+const mieszko = user("Mieszko", 20);
+const jagienka = user("Jagienka", 16);
+mieszko();
+jagienka();
+const noName = user();
+noName();
+// został przekazany pusty string jako imie i undefined jako wiek. undefined jako false ma 0 a 0 nie jest większe od 18 i zwracamy odpowiedz drugą.
 
 // const add = (start = 0) => {
 //
