@@ -8,8 +8,30 @@ import '../scss/main.scss';
 
 console.log('HELLO 🚀')
 
+const timer = document.querySelector('div');
 
-let counter = 0;
+const countSecs = () => {
+    let number = 0;
+    setInterval(counter, 1000);
+    function counter(){
+        number++;
+        console.log(number);
+        timer.textContent = `${number < 10 ? '0'+ number: number} sekund`;
+
+    }
+    return counter;
+}
+const odliczaj = countSecs();
+odliczaj();
+
+// let counter = 0;
+// const startCounter = () => {
+//     counter++
+//     console.log(counter);
+//     document.body.textContent = ` ${counter} sekund`;
+// }
+//
+// setInterval(startCounter, 1000);
 
 
 // const user = (name ="", age) => {
