@@ -8,7 +8,7 @@ import '../scss/main.scss';
 
 console.log('HELLO 🚀')
 
-const timer = document.querySelector('div');
+const timer = document.querySelector('.timer');
 
 const countSecs = () => {
     let number = 0;
