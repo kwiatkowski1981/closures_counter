@@ -12,7 +12,7 @@ const timer = document.querySelector('.timer');
 
 const countSecs = () => {
     let number = 0;
-    setInterval(counter, 1000);
+
     function counter(){
         number++;
         console.log(number);
@@ -21,8 +21,9 @@ const countSecs = () => {
     }
     return counter;
 }
-const odliczaj = countSecs();
-odliczaj();
+const count = countSecs();
+setInterval(count, 1000);
+
 
 // let counter = 0;
 // const startCounter = () => {
